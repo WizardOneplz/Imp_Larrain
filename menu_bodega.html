@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index2.html">TIENDA</a>
+            <a class="nav-link" aria-current="page" href="index.html">TIENDA</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#troquelado">OFERTAS</a>
@@ -55,13 +55,13 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-12 blanco">
                     <div class="container espacio3">
-                        <div> <h1 class="text-center">Hola! </h1></div> 
                         <div class="d-flex align-items-start">
                             <div class="col-md-2 nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <!--Registro de producto-->
+                            <!--Menu de Bodega-->
                               <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Registro de Productos</button>
-                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Cambiar Contraseña</button>
-                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mis Pedidos</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Busqueda de Productos</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pedidos de Cliente</button>
+                              <button class="nav-link" id="v-pills-sucursal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sucursal" type="button" role="tab" aria-controls="v-pills-sucursal" aria-selected="false">Pedidos de Sucursal</button>
                             </div>
                             <div class="tab-content col-md-10" id="v-pills-tabContent">
                               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
@@ -193,31 +193,91 @@
                                 </div>
                                 </div>
                                 </div>
+                                <!--Busqueda de producto-->
                               <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                <form action="" method="POST">
-                                    <div class="row">
-                                        <div>
-                                            <div >
-                                                <div class="col">
-                                                    <label for="exampleFormControlInput1" class="form-label">Contraseña Actual</label>
-                                                    <input type="password" class="form-control" id="exampleFormControlInput1" name="Nombre" placeholder="Ingresa tu contraseña actual" required>
-                                                </div>
-                                                <div class="col">
-                                                    <label for="exampleFormControlInput1" class="form-label">Contraseña Nueva</label>
-                                                    <input type="password" class="form-control" id="exampleFormControlInput1" name="Correo" placeholder="Ingresa tu nueva contraseña" required>
-                                                </div>
-                                                <div class="col espacio_form">
-                                                    <label for="exampleFormControlInput1" class="form-label">Repetir Nueva Contraseña</label>
-                                                    <input type="password" class="form-control" id="exampleFormControlInput1" name="Correo" placeholder="Ingresa tu nueva contraseña" required>
-                                                </div>
-                                              </div>                                            
-                                            <button type="submit" class="btn btn-warning btn-lg">Guardar</button>
+                                <ul class="nav justify-content-center espacio3">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorias
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                              </div>
+                              <!--Lista de Pedidos-->
+                              <div class="tab-pane fade negro" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                  <div class="container">
+                                    <div class="card">
+                                        <h5 class="card-header">Xiaomi Redmi Airdots S</h5>
+                                        <div class="card-body">
+                                        <h5 class="card-title">Arribo estimado del pedido : 15 de octubre de 2021</h5>
+                                        <p class="card-text">Realizado el 29 de septiembre de 2021</p>
+                                        <a href="#" class="btn btn-primary">Detalles</a>
                                         </div>
                                     </div>
-                                  </form>
+                                    </div>
+                                    <div class="container espacio2">
+                                        <div class="card">
+                                        <h5 class="card-header">Nokia 5.1 Plus</h5>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Arribo estimado del pedido : 09 de octubre de 2021</h5>
+                                            <p class="card-text">Realizado el 20 de septiembre de 2021</p>
+                                            <a href="#" class="btn btn-primary">Detalles</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="container espacio2">
+                                        <div class="card">
+                                            <h5 class="card-header">HyperX CloudX</h5>
+                                            <div class="card-body">
+                                            <h5 class="card-title">Arribo estimado del pedido : 30 de septiembre de 2021</h5>
+                                            <p class="card-text">Realizado el 11 de septiembre de 2021</p>
+                                            <a href="#" class="btn btn-primary">Detalles</a>
+                                            </div>
+                                        </div>
+                                    </div>
                               </div>
-                              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                              <div class="tab-pane fade negro" id="v-pills-sucursal" role="tabpanel" aria-labelledby="v-pills-home-sucursal">
+                                <div class="container">
+                                    <div class="card">
+                                        <h5 class="card-header">Xiaomi Redmi Airdots S</h5>
+                                        <div class="card-body">
+                                        <h5 class="card-title">Arribo estimado del pedido : 15 de octubre de 2021</h5>
+                                        <p class="card-text">Realizado el 29 de septiembre de 2021</p>
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="container espacio2">
+                                        <div class="card">
+                                        <h5 class="card-header">Nokia 5.1 Plus</h5>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Arribo estimado del pedido : 09 de octubre de 2021</h5>
+                                            <p class="card-text">Realizado el 20 de septiembre de 2021</p>
+                                            <a href="#" class="btn btn-primary">Detalles</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="container espacio2">
+                                        <div class="card">
+                                            <h5 class="card-header">HyperX CloudX</h5>
+                                            <div class="card-body">
+                                            <h5 class="card-title">Arribo estimado del pedido : 30 de septiembre de 2021</h5>
+                                            <p class="card-text">Realizado el 11 de septiembre de 2021</p>
+                                            <a href="#" class="btn btn-primary">Detalles</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                              </div>
                             </div>
                           </div>                     
                     </div>
