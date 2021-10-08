@@ -53,11 +53,21 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <form action="" method="POST">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Cliente</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Empleado</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form class"" action="" method="POST">
                     <div class="row">
                         <div class="col-md-">
                             <div class="mb-3">
-                              <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                              <label for="exampleFormControlInput1" class="form-label espacio4">Correo Electrónico</label>
                               <input type="email" class="form-control" id="exampleFormControlInput1" name="Correo" placeholder="" required> 
                             </div>
                             <div class="mb-3">
@@ -69,7 +79,27 @@
                             <a href="registro.html"><button type="button" class="btn btn-primary">Crear cuenta</button></a>
                         </div>
                     </div>                   
-                  </form>
+                    </form>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <form class"espacio2" action="" method="POST">
+                    <div class="row">
+                        <div class="col-md-">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label espacio4">Correo Electrónico</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" name="Correo" placeholder="" required> 
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleFormControlInput1" name="Contraseña" placeholder="" required>
+                                <a class="" href="restablecer.html">¿Olvidaste la contraseña?</a>
+                            </div>         
+                            <a href="menu_bodega.html"><button type="button" class="btn btn-secondary">Ingresar</button></a>
+                        </div>
+                    </div>                   
+                    </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
