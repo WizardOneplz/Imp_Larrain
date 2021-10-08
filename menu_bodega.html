@@ -58,12 +58,14 @@
                         <div> <h1 class="text-center">Hola! </h1></div> 
                         <div class="d-flex align-items-start">
                             <div class="col-md-2 nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <!--Registro de producto-->
                               <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Registro de Productos</button>
                               <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Cambiar Contraseña</button>
                               <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mis Pedidos</button>
                             </div>
                             <div class="tab-content col-md-10" id="v-pills-tabContent">
                               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                              <!--Opciones de Registro de producto-->
                               <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Entrada de producto</button>
@@ -73,10 +75,124 @@
                                 </li>
                               </ul>
                             <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                            <!--Ingreso de producto-->
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form action="" method="POST" class="espacio4">
+                            <div class="row">
+                                <div class="col-md-">
+                                    <div class="row espacio_form">
+                                        <div class="col">
+                                            <label for="exampleFormControlInput1" class="form-label">ID Producto</label>
+                                            <input type="number" class="form-control" id="exampleFormControlInput1" name="id" placeholder="" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleFormControlInput1" class="form-label">Nombre Producto</label>
+                                            <input type="name" class="form-control" id="exampleFormControlInput1" name="nombre_producto" placeholder="" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Precio</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput1" name="precio" placeholder="" required> 
+                                    </div>
+                                    <div class="row espacio_form">
+                                        <div class="col">
+                                            <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+                                            <input type="number" class="form-control" id="exampleFormControlInput1" name="stock" placeholder="" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleFormControlInput1" class="form-label">Porcentaje de Oferta</label>
+                                            <input type="number" class="form-control" id="exampleFormControlInput1" name="oferta" placeholder="" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Marca</label>
+                                                <select id="region" name="region" class="form-select">
+                                                    <option value="1" selected>Microsoft</option>
+                                                    <option value="2">Razer</option>
+                                                    <option value="3">HP</option>
+                                                    <option value="4">Xiaomi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                            <div class="col">
+                                            <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+                                            <select id="region" name="region" class="form-select">
+                                                <option value="1" selected>Audifonos</option>
+                                                <option value="2">Teclados</option>
+                                                <option value="3">Cargadores</option>
+                                                <option value="4">Mouses</option>
+                                            </select>
+                                            </div>
+                                            </div> 
+                                    </div>
+                                    <button type="submit" value="Submit" class="btn btn-warning btn-lg">Registrar Entrada</button>
+                                </div>
                             </div>
-                              </div>
+                            </form>
+                            </div>
+                            <!--Salida de producto-->
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form action="" method="POST" class="espacio4">
+                                <div class="row">
+                                    <div class="col-md-">
+                                        <div class="row espacio_form">
+                                            <div class="col">
+                                                <label for="exampleFormControlInput1" class="form-label">ID Producto</label>
+                                                <input type="number" class="form-control" id="exampleFormControlInput1" name="id" placeholder="" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="exampleFormControlInput1" class="form-label">Nombre Producto</label>
+                                                <input type="name" class="form-control" id="exampleFormControlInput1" name="nombre_producto" placeholder="" required>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Precio</label>
+                                            <input type="number" class="form-control" id="exampleFormControlInput1" name="precio" placeholder="" required> 
+                                        </div>
+                                        <div class="row espacio_form">
+                                            <div class="col">
+                                                <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+                                                <input type="number" class="form-control" id="exampleFormControlInput1" name="stock" placeholder="" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="exampleFormControlInput1" class="form-label">Porcentaje de Oferta</label>
+                                                <input type="number" class="form-control" id="exampleFormControlInput1" name="oferta" placeholder="" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Marca</label>
+                                                    <select id="region" name="region" class="form-select">
+                                                        <option value="1" selected>Microsoft</option>
+                                                        <option value="2">Razer</option>
+                                                        <option value="3">HP</option>
+                                                        <option value="4">Xiaomi</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                <div class="col">
+                                                <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+                                                <select id="region" name="region" class="form-select">
+                                                    <option value="1" selected>Audifonos</option>
+                                                    <option value="2">Teclados</option>
+                                                    <option value="3">Cargadores</option>
+                                                    <option value="4">Mouses</option>
+                                                </select>
+                                                </div>
+                                                </div> 
+                                        </div>
+                                        <button type="submit" value="Submit" class="btn btn-warning btn-lg">Registrar Salida</button>
+                                    </div>
+                                </div>
+                                </form>
+                                </div>
+                                </div>
+                                </div>
                               <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                                 <form action="" method="POST">
                                     <div class="row">
